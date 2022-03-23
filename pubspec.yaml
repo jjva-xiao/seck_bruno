@@ -1,0 +1,37 @@
+name: bruno
+description: A new Flutter project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  xml: 4.5.1
+  intl: 0.16.1
+  path_drawing: 0.4.1+1
+  photo_view: 0.10.3
+  lpinyin: 1.1.1
+  badges: 1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/icons/radio/
+    - assets/images/no_data.png
+    - assets/images/two_line_bubble.png
+    - assets/json/
+    - assets/json/china.json
+  fonts:
+    - family: Condensed
+      fonts:
+        - asset: assets/fonts/Bebas-Regular.ttf
