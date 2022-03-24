@@ -1,5 +1,5 @@
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/css/brn_util.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/css/brn_util.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:xml/xml_events.dart' as xml;

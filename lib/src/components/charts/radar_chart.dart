@@ -115,7 +115,7 @@ class BrnRadarChart extends MultiChildRenderObjectWidget {
               return children;
             }());
 
-  ///The default style named constructor which is designed with Bruno style.
+  ///The default style named constructor which is designed with bruno_fork style.
   ///The [data] length should be less than the [defaultRadarChartStyles]'s length
   ///or you should use the default constructor.
   BrnRadarChart.defaultStyle({

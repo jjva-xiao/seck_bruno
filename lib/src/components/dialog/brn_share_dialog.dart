@@ -1,10 +1,10 @@
-import 'package:bruno/src/components/dialog/brn_dialog.dart';
-import 'package:bruno/src/components/dialog/brn_dialog_utils.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/constants/brn_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_dialog_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/dialog/brn_dialog.dart';
+import 'package:bruno_fork/src/components/dialog/brn_dialog_utils.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/constants/brn_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_dialog_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 点击item回调
@@ -157,7 +157,7 @@ class BrnShareDialog extends StatelessWidget {
               child: Container(
                 width: 30,
                 height: 30,
-                child: BrunoTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
+                child: bruno_forkTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
               ),
               onTap: () {
                 Navigator.of(context).pop();
@@ -208,7 +208,7 @@ class BrnShareDialog extends StatelessWidget {
       } else {
         // 获取自预设channel信息
         title = BrnShareItemConstants.shareItemTitleList[shareChannels[index]];
-        image = BrunoTools.getAssetImage(
+        image = bruno_forkTools.getAssetImage(
             BrnShareItemConstants.shareItemImagePathList[shareChannels[index]]);
       }
       //如果没图或没文字则不显示

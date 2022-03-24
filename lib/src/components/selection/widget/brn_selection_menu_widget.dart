@@ -1,18 +1,18 @@
 import 'dart:async';
 
-import 'package:bruno/src/components/picker/time_picker/brn_date_time_formatter.dart';
-import 'package:bruno/src/components/selection/bean/brn_selection_common_entity.dart';
-import 'package:bruno/src/components/selection/brn_selection_view.dart';
-import 'package:bruno/src/components/selection/controller/brn_selection_view_controller.dart';
-import 'package:bruno/src/components/selection/brn_selection_util.dart';
-import 'package:bruno/src/components/selection/widget/brn_selection_animate_widget.dart';
-import 'package:bruno/src/components/selection/widget/brn_selection_list_widget.dart';
-import 'package:bruno/src/components/selection/widget/brn_selection_menu_item_widget.dart';
-import 'package:bruno/src/components/selection/widget/brn_selection_range_widget.dart';
-import 'package:bruno/src/theme/configs/brn_selection_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
-import 'package:bruno/src/utils/brn_event_bus.dart';
-import 'package:bruno/src/utils/i18n/brn_date_picker_i18n.dart';
+import 'package:bruno_fork/src/components/picker/time_picker/brn_date_time_formatter.dart';
+import 'package:bruno_fork/src/components/selection/bean/brn_selection_common_entity.dart';
+import 'package:bruno_fork/src/components/selection/brn_selection_view.dart';
+import 'package:bruno_fork/src/components/selection/controller/brn_selection_view_controller.dart';
+import 'package:bruno_fork/src/components/selection/brn_selection_util.dart';
+import 'package:bruno_fork/src/components/selection/widget/brn_selection_animate_widget.dart';
+import 'package:bruno_fork/src/components/selection/widget/brn_selection_list_widget.dart';
+import 'package:bruno_fork/src/components/selection/widget/brn_selection_menu_item_widget.dart';
+import 'package:bruno_fork/src/components/selection/widget/brn_selection_range_widget.dart';
+import 'package:bruno_fork/src/theme/configs/brn_selection_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/utils/brn_event_bus.dart';
+import 'package:bruno_fork/src/utils/i18n/brn_date_picker_i18n.dart';
 import 'package:flutter/material.dart';
 
 typedef bool BrnOnMenuItemClick(int index);
@@ -364,7 +364,7 @@ class _BrnSelectionMenuWidgetState extends State<BrnSelectionMenuWidget> {
     if (entity.filterType == BrnSelectionFilterType.More) {
       return null;
     }
-    if (BrunoTools.isEmpty(entity.customTitle)) {
+    if (bruno_forkTools.isEmpty(entity.customTitle)) {
       return getTitle(entity);
     } else {
       return entity.customTitle;
@@ -434,14 +434,14 @@ class _BrnSelectionMenuWidgetState extends State<BrnSelectionMenuWidget> {
         }
       }
       String joinTitle = getJoinTitle(entity, firstColumn, secondColumn, thirdColumn);
-      title = BrunoTools.isEmpty(joinTitle) ? title : joinTitle;
+      title = bruno_forkTools.isEmpty(joinTitle) ? title : joinTitle;
     }
     return title;
   }
 
   String getDateAndRangeTitle(List<BrnSelectionEntity> list, BrnSelectionEntity entity) {
     String title = "";
-    if (!BrunoTools.isEmpty(list[0].customMap)) {
+    if (!bruno_forkTools.isEmpty(list[0].customMap)) {
       if (list[0].filterType == BrnSelectionFilterType.Range) {
         title =
             '${list[0].customMap['min']}-${list[0].customMap['max']}(${list[0].extMap['unit']?.toString()})';
@@ -523,7 +523,7 @@ class _BrnSelectionMenuWidgetState extends State<BrnSelectionMenuWidget> {
     }
     if (entity.selectedListWithoutUnlimit().length > 0) {
       menuItemHighlightState[index] = true;
-    } else if (!BrunoTools.isEmpty(entity.customTitle)) {
+    } else if (!bruno_forkTools.isEmpty(entity.customTitle)) {
       menuItemHighlightState[index] = entity.isCustomTitleHighLight;
     } else {
       menuItemHighlightState[index] = false;

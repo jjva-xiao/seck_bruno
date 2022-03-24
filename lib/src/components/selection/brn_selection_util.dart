@@ -1,5 +1,5 @@
-import 'package:bruno/src/components/selection/bean/brn_selection_common_entity.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/selection/bean/brn_selection_common_entity.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 
 const double DESIGN_SELECTION_HEIGHT = 268;
 const double DESIGN_BOTTOM_HEIGHT = 82;
@@ -11,7 +11,7 @@ class BrnSelectionUtil {
     if (BrnSelectionFilterType.Checkbox == selectionEntity.filterType) {
       selectionEntity.isSelected = !selectionEntity.isSelected;
       List<BrnSelectionEntity> allBrothers = selectionEntity.parent?.children;
-      if (!BrunoTools.isEmpty(allBrothers)) {
+      if (!bruno_forkTools.isEmpty(allBrothers)) {
         for (BrnSelectionEntity entity in allBrothers) {
           if (entity != selectionEntity) {
             if (entity.filterType == BrnSelectionFilterType.Radio) {

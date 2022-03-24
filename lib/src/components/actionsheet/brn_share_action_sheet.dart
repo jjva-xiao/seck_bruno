@@ -1,7 +1,7 @@
-import 'package:bruno/src/components/line/brn_line.dart';
-import 'package:bruno/src/constants/brn_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/line/brn_line.dart';
+import 'package:bruno_fork/src/constants/brn_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// section为所在行数（0或1），index是在第几位（从0开始记）, shareItem为渠道相关信息
@@ -123,9 +123,9 @@ class BrnShareActionSheet extends StatelessWidget {
     image = (channel.shareType == BrnShareItemConstants.SHARE_CUSTOM)
         ? channel.customImage
         : (channel.canClick
-            ? BrunoTools.getAssetImage(
+            ? bruno_forkTools.getAssetImage(
                 BrnShareItemConstants.shareItemImagePathList[channel.shareType])
-            : BrunoTools.getAssetImage(
+            : bruno_forkTools.getAssetImage(
                 BrnShareItemConstants.disableShareItemImagePathList[channel.shareType]));
     //如果没图或没文字则不显示
     if (title == null || image == null) {

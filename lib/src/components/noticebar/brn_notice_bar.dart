@@ -1,6 +1,6 @@
-import 'package:bruno/src/components/noticebar/brn_marquee_text.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/noticebar/brn_marquee_text.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 通知，默认最小高度36
@@ -146,73 +146,73 @@ class BrnNoticeBar extends StatelessWidget {
 class NoticeStyles {
   ///红色+失败+箭头
   static NoticeStyle failWithArrow = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_FAIL),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_FAIL),
       Color(0xFFFA3F3F),
       Color(0xFFFEEDED),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_RED));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_RED));
 
   ///红色+失败+关闭
   static NoticeStyle failWithClose = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_FAIL),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_FAIL),
       Color(0xFFFA3F3F),
       Color(0xFFFEEDED),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_RED));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_RED));
 
   ///蓝色+进行中+箭头
   static NoticeStyle runningWithArrow = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_RUNNING),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_RUNNING),
       Color(0xFF0984F9),
       Color(0xFFE0EDFF),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_BLUE));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_BLUE));
 
   ///蓝色+进行中+关闭
   static NoticeStyle runningWithClose = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_RUNNING),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_RUNNING),
       Color(0xFF0984F9),
       Color(0xFFE0EDFF),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_BLUE));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_BLUE));
 
   ///绿色+完成+箭头
   static NoticeStyle succeedWithArrow = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_SUCCEED),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_SUCCEED),
       Color(0xFF00AE66),
       Color(0xFFEBFFF7),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_GREEN));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_GREEN));
 
   ///绿色+完成+关闭
   static NoticeStyle succeedWithClose = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_SUCCEED),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_SUCCEED),
       Color(0xFF00AE66),
       Color(0xFFEBFFF7),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_GREEN));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_GREEN));
 
   ///橘色+警告+箭头
   static NoticeStyle warningWithArrow = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_WARNING),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_WARNING),
       Color(0xFFFAAD14),
       Color(0xFFFDFCEC),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_ORANGE));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_ORANGE));
 
   ///橘色+警告+关闭
   static NoticeStyle warningWithClose = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_WARNING),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_WARNING),
       Color(0xFFFAAD14),
       Color(0xFFFDFCEC),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_ORANGE));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_ORANGE));
 
   ///橘色+通知+箭头
   static NoticeStyle normalNoticeWithArrow = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE),
       Color(0xFFFAAD14),
       Color(0xFFFDFCEC),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_ORANGE));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_ARROW_ORANGE));
 
   ///橘色+通知+关闭
   static NoticeStyle normalNoticeWithClose = NoticeStyle(
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE),
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE),
       Color(0xFFFAAD14),
       Color(0xFFFDFCEC),
-      BrunoTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_ORANGE));
+      bruno_forkTools.getAssetImage(BrnAsset.ICON_NOTICE_CLOSE_ORANGE));
 }
 
 /// 通知样式

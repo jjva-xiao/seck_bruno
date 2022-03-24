@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'dart:ui' as ui;
 
-import 'package:bruno/src/components/charts/radar_chart.dart';
+import 'package:bruno_fork/src/components/charts/radar_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -50,7 +50,7 @@ class BrnFunnelChart extends MultiChildRenderObjectWidget {
   ///用于每层layer的绘制，可以继承[BrnFunnelLayerPainter]对每层的绘制进行定制
   final BrnFunnelLayerPainter layerPainter;
 
-  ///Bruno风格的每层layer预设的颜色值，按顺序使用颜色值。实际层数超过该数量需要自行定义。
+  ///bruno_fork风格的每层layer预设的颜色值，按顺序使用颜色值。实际层数超过该数量需要自行定义。
   static const List<Color> defaultLayerColors = [
     Color(0xFF3575FC),
     Color(0xFF0984F9),
@@ -91,7 +91,7 @@ class BrnFunnelChart extends MultiChildRenderObjectWidget {
               return children;
             }());
 
-  ///漏斗图默认Bruno风格的命名构造函数，[layerCount]不能大于[defaultLayerColors.length]。
+  ///漏斗图默认bruno_fork风格的命名构造函数，[layerCount]不能大于[defaultLayerColors.length]。
   BrnFunnelChart.defaultStyle({
     Key key,
     @required this.layerCount,
@@ -693,7 +693,7 @@ abstract class BrnFunnelLayerPainter {
       Canvas canvas, double left, double top, double right, double bottom, int layerIndex);
 }
 
-///漏斗图默认LayerPainter,在漏斗每层layer中间绘制文案，每层的颜色值使用Bruno预设的颜色。
+///漏斗图默认LayerPainter,在漏斗每层layer中间绘制文案，每层的颜色值使用bruno_fork预设的颜色。
 class BrnDefaultFunnelLayerPainter extends BrnFunnelLayerPainter {
   ///每层漏斗文案TextStyle
   final TextStyle textStyle;

@@ -1,9 +1,9 @@
 import 'dart:ui';
 
-import 'package:bruno/src/theme/base/brn_base_config.dart';
-import 'package:bruno/src/theme/base/brn_text_style.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_common_config.dart';
+import 'package:bruno_fork/src/theme/base/brn_base_config.dart';
+import 'package:bruno_fork/src/theme/base/brn_text_style.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_common_config.dart';
 
 /// 筛选项 配置类
 

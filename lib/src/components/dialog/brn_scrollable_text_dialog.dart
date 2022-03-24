@@ -1,6 +1,6 @@
-import 'package:bruno/src/components/dialog/brn_content_export_dialog.dart';
-import 'package:bruno/src/utils/css/brn_core_funtion.dart';
-import 'package:bruno/src/utils/css/brn_css_2_text.dart';
+import 'package:bruno_fork/src/components/dialog/brn_content_export_dialog.dart';
+import 'package:bruno_fork/src/utils/css/brn_core_funtion.dart';
+import 'package:bruno_fork/src/utils/css/brn_css_2_text.dart';
 import 'package:flutter/material.dart';
 
 ///  纯文本展示Dialog 超过定高可滚动

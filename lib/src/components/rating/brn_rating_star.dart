@@ -1,5 +1,5 @@
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 星星视图的自定义构造器
@@ -128,12 +128,12 @@ class _BrnRatingStarState extends State<BrnRatingStar> {
   Widget _buildRating(RatingState state) {
     switch (state) {
       case RatingState.select:
-        return BrunoTools.getAssetSizeImage(BrnAsset.ICON_STAR, 16, 16);
+        return bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STAR, 16, 16);
       case RatingState.half:
-        return BrunoTools.getAssetSizeImage(BrnAsset.ICON_STAR_HALF, 16, 16);
+        return bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STAR_HALF, 16, 16);
       case RatingState.unselect:
       default:
-        return BrunoTools.getAssetSizeImage(BrnAsset.ICON_STAR, 16, 16, color: Color(0xFFF0F0F0));
+        return bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STAR, 16, 16, color: Color(0xFFF0F0F0));
     }
   }
 }

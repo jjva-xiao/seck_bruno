@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_action_sheet_config.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_action_sheet_config.dart';
 import 'package:flutter/material.dart';
 
 typedef void BrnCommonActionSheetItemClickCallBack(

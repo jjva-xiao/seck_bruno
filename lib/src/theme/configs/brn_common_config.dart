@@ -1,7 +1,7 @@
 import 'dart:ui';
 
-import 'package:bruno/src/theme/base/brn_base_config.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/base/brn_base_config.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
 
 ///  描述: 全局配置
 ///  配置属性 色值、字体大小、间距、圆角
@@ -323,7 +323,7 @@ class BrnCommonConfig extends BrnBaseConfig {
     String configId = BrnThemeConfigurator.GLOBAL_CONFIG_ID,
   }) : super(configId: configId, autoFlatConfig: true);
 
-  /// 优先级  [GLOBAL_CONFIG_ID] 获取配置 > [BRUNO_CONFIG_ID] 获取配置
+  /// 优先级  [GLOBAL_CONFIG_ID] 获取配置 > [bruno_fork_CONFIG_ID] 获取配置
   @override
   void initThemeConfig(String configId, {BrnCommonConfig currentLevelCommonConfig}) {
     /// 获取合适的 完整配置（BrnAllConfig）

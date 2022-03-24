@@ -1,4 +1,4 @@
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
 import 'package:flutter/material.dart';
 
 /// 用于分割页面组件元素的横向分割线

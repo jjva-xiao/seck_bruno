@@ -1,7 +1,7 @@
-import 'package:bruno/bruno.dart';
-import 'package:bruno/src/components/navbar/brn_appbar_theme.dart';
-import 'package:bruno/src/constants/brn_strings_constants.dart';
-import 'package:bruno/src/theme/brn_theme.dart';
+import 'package:bruno_fork/bruno_fork.dart';
+import 'package:bruno_fork/src/components/navbar/brn_appbar_theme.dart';
+import 'package:bruno_fork/src/constants/brn_strings_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -9,7 +9,7 @@ typedef BrnWidgetBuilder = Widget Function();
 
 /// Appbar主题配置
 class BrnAppBarConfig extends BrnBaseConfig {
-  /// BrnAppBar 主题配置，遵循外部主题配置，Bruno默认配置[BrnDefaultConfigUtils.defaultAppBarConfig]
+  /// BrnAppBar 主题配置，遵循外部主题配置，bruno_fork默认配置[BrnDefaultConfigUtils.defaultAppBarConfig]
   BrnAppBarConfig(
       {this.backgroundColor,
       this.appBarHeight,

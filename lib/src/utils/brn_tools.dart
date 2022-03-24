@@ -1,9 +1,9 @@
-import 'package:bruno/src/constants/brn_strings_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_common_config.dart';
+import 'package:bruno_fork/src/constants/brn_strings_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_common_config.dart';
 import 'package:flutter/material.dart';
 
-class BrunoTools {
+class bruno_forkTools {
   /// 将 icon 根据主题色变色后返回
   static Image getAssetImageWithBandColor(String assetFilePath,
       {String configId = BrnThemeConfigurator.GLOBAL_CONFIG_ID}) {

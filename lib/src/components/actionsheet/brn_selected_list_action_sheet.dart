@@ -1,10 +1,10 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bruno/src/components/dialog/brn_dialog.dart';
-import 'package:bruno/src/components/line/brn_line.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/dialog/brn_dialog.dart';
+import 'package:bruno_fork/src/components/line/brn_line.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 监听数据刷新和列表关闭操作
@@ -509,7 +509,7 @@ class _BrnActionSheetSelectedItemListState<T>
                                               width: 45,
                                               padding: const EdgeInsets.only(
                                                   left: 5, right: 20),
-                                              child: BrunoTools.getAssetImage(
+                                              child: bruno_forkTools.getAssetImage(
                                                   BrnAsset.ICON_TRASH_BIN)),
                                         ),
                                       ),

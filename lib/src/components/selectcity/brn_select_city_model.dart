@@ -1,4 +1,4 @@
-import 'package:bruno/src/components/selectcity/brn_az_common.dart';
+import 'package:bruno_fork/src/components/selectcity/brn_az_common.dart';
 
 class BrnSelectCityModel extends ISuspensionBean {
   String name;

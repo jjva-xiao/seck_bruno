@@ -1,8 +1,8 @@
-import 'package:bruno/src/theme/brn_theme.dart';
-import 'package:bruno/src/theme/configs/brn_all_config.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/theme/configs/brn_all_config.dart';
 
 class BrnThemeConfigurator {
-  static const String BRUNO_CONFIG_ID = 'BRUNO_CONFIG_ID';
+  static const String bruno_fork_CONFIG_ID = 'bruno_fork_CONFIG_ID';
   static const String GLOBAL_CONFIG_ID = 'GLOBAL_CONFIG_ID';
 
   static final BrnThemeConfigurator _instance = BrnThemeConfigurator._();
@@ -19,7 +19,7 @@ class BrnThemeConfigurator {
     assert(configId != null);
 
     /// 先赋值默认配置
-    checkAndInitBrunoConfig();
+    checkAndInitbruno_forkConfig();
 
     /// 打平内部字段
     allThemeConfig?.initThemeConfig(configId);
@@ -33,30 +33,30 @@ class BrnThemeConfigurator {
   /// 获取合适的配置
   /// 1、获取 configId 对应的全局主题配置，
   /// 2、若获取的为 null，则使用默认的全局配置。
-  /// 3、若没有配置 GLOBAL_CONFIG_ID ，则使用 BRUNO 的配置。
+  /// 3、若没有配置 GLOBAL_CONFIG_ID ，则使用 bruno_fork 的配置。
   BrnAllThemeConfig getConfig({String configId = GLOBAL_CONFIG_ID}) {
     assert(configId != null);
-    checkAndInitBrunoConfig();
+    checkAndInitbruno_forkConfig();
 
     BrnAllThemeConfig allThemeConfig = globalConfig[configId];
     if (allThemeConfig == null) {
       allThemeConfig = globalConfig[GLOBAL_CONFIG_ID];
     }
     if (allThemeConfig == null) {
-      allThemeConfig = globalConfig[BRUNO_CONFIG_ID];
+      allThemeConfig = globalConfig[bruno_fork_CONFIG_ID];
     }
     return allThemeConfig;
   }
 
   /// 检查是否有默认配置
-  bool isBrunoConfig() {
-    return globalConfig[BRUNO_CONFIG_ID] != null;
+  bool isbruno_forkConfig() {
+    return globalConfig[bruno_fork_CONFIG_ID] != null;
   }
 
   /// 没有默认配置 配置默认配置
-  void checkAndInitBrunoConfig() {
-    if (!isBrunoConfig()) {
-      globalConfig[BRUNO_CONFIG_ID] = BrnDefaultConfigUtils.defaultAllConfig;
+  void checkAndInitbruno_forkConfig() {
+    if (!isbruno_forkConfig()) {
+      globalConfig[bruno_fork_CONFIG_ID] = BrnDefaultConfigUtils.defaultAllConfig;
     }
   }
 }

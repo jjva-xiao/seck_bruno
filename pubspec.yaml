@@ -1,8 +1,8 @@
-name: bruno
-description: A new Flutter project.
-version: 0.0.1
-author:
-homepage:
+name: bruno_fork
+description: bruno框架的在Flutter 1.22.6的分支
+version: 1.0.0
+author: XiaoHongBing
+homepage: http://bruno.ke.com/
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

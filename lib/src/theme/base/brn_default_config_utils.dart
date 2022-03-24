@@ -1,27 +1,27 @@
-import 'package:bruno/bruno.dart';
-import 'package:bruno/src/components/navbar/brn_appbar_theme.dart';
-import 'package:bruno/src/components/picker/base/brn_picker_constants.dart';
-import 'package:bruno/src/constants/brn_strings_constants.dart';
-import 'package:bruno/src/theme/brn_theme.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_abnormal_state_config.dart';
-import 'package:bruno/src/theme/configs/brn_action_sheet_config.dart';
-import 'package:bruno/src/theme/configs/brn_appbar_config.dart';
-import 'package:bruno/src/theme/configs/brn_button_config.dart';
-import 'package:bruno/src/theme/configs/brn_card_title_config.dart';
-import 'package:bruno/src/theme/configs/brn_common_config.dart';
-import 'package:bruno/src/theme/configs/brn_form_config.dart';
-import 'package:bruno/src/theme/configs/brn_gallery_detail_config.dart';
-import 'package:bruno/src/theme/configs/brn_enhance_number_card_config.dart';
-import 'package:bruno/src/theme/configs/brn_pair_info_config.dart';
-import 'package:bruno/src/theme/configs/brn_picker_config.dart';
-import 'package:bruno/src/theme/configs/brn_selection_config.dart';
-import 'package:bruno/src/theme/configs/brn_tabbar_config.dart';
-import 'package:bruno/src/theme/configs/brn_tag_config.dart';
+import 'package:bruno_fork/bruno_fork.dart';
+import 'package:bruno_fork/src/components/navbar/brn_appbar_theme.dart';
+import 'package:bruno_fork/src/components/picker/base/brn_picker_constants.dart';
+import 'package:bruno_fork/src/constants/brn_strings_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_abnormal_state_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_action_sheet_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_appbar_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_button_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_card_title_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_common_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_form_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_gallery_detail_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_enhance_number_card_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_pair_info_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_picker_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_selection_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_tabbar_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_tag_config.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-/// Bruno默认配置
+/// bruno_fork默认配置
 class BrnDefaultConfigUtils {
   ///  默认全局配置
   static BrnAllThemeConfig defaultAllConfig = BrnAllThemeConfig(
@@ -353,7 +353,7 @@ class BrnDefaultConfigUtils {
       itemSpacing: BrnAppBarTheme.iconMargin,
       titlePadding: EdgeInsets.zero,
       iconSize: BrnAppBarTheme.iconSize,
-      configId: BrnThemeConfigurator.BRUNO_CONFIG_ID,
+      configId: BrnThemeConfigurator.bruno_fork_CONFIG_ID,
       systemUiOverlayStyle: SystemUiOverlayStyle.dark);
 
   /// 内容信息（两列）配置
@@ -366,7 +366,7 @@ class BrnDefaultConfigUtils {
         color: defaultCommonConfig.colorTextBase, fontSize: defaultCommonConfig.fontSizeBase),
     linkTextStyle: BrnTextStyle(
         color: defaultCommonConfig.brandPrimary, fontSize: defaultCommonConfig.fontSizeBase),
-    configId: BrnThemeConfigurator.BRUNO_CONFIG_ID,
+    configId: BrnThemeConfigurator.bruno_fork_CONFIG_ID,
   );
 
   /// 内容信息（一列）配置
@@ -386,7 +386,7 @@ class BrnDefaultConfigUtils {
         color: defaultCommonConfig.brandPrimary,
         fontSize: defaultCommonConfig.fontSizeBase,
         textBaseline: TextBaseline.ideographic),
-    configId: BrnThemeConfigurator.BRUNO_CONFIG_ID,
+    configId: BrnThemeConfigurator.bruno_fork_CONFIG_ID,
   );
 
   /// 按钮配置
@@ -397,7 +397,7 @@ class BrnDefaultConfigUtils {
     smallButtonRadius: 4,
     smallButtonHeight: 32,
     smallButtonFontSize: 14,
-    configId: BrnThemeConfigurator.BRUNO_CONFIG_ID,
+    configId: BrnThemeConfigurator.bruno_fork_CONFIG_ID,
   );
 
   static BrnActionSheetConfig defaultActionSheetConfig = BrnActionSheetConfig(

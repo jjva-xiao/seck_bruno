@@ -1,11 +1,11 @@
 import 'dart:ui';
 
-import 'package:bruno/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
 import 'package:flutter/material.dart';
 
 /// TabBar配置类
 class BrnTabBarConfig extends BrnBaseConfig {
-  ///遵循外部主题配置，Bruno默认配置[BrnDefaultConfigUtils.defaultNumberInfoConfig]
+  ///遵循外部主题配置，bruno_fork默认配置[BrnDefaultConfigUtils.defaultNumberInfoConfig]
   BrnTabBarConfig({
     this.tabHeight,
     this.indicatorHeight,

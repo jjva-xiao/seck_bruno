@@ -1,14 +1,13 @@
 # seck_bruno
+感谢 [Bruno](https://github.com/LianjiaTech/bruno) 的奉献，因为本人的项目使用的是 Flutter 1.22.6 环境（即非空安全的最后一个版本）
+所以本人对 Bruno 做了适配 Flutter 1.22.6 环境，可以供有需要的同学使用
 
-A new Flutter project.
+## 使用方法
+本仓库的代码使用方法与 [Bruno API文档](http://bruno.ke.com/) 一致
 
-## Getting Started
+## 如何使用
+在 pubspec.yaml文件中加入如下
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+``` 
+bruno_fork: 1.0.0
+```

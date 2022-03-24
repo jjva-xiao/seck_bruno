@@ -1,8 +1,8 @@
-import 'package:bruno/src/components/button/brn_icon_button.dart';
-import 'package:bruno/src/components/guide/brn_flutter_guide.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/button/brn_icon_button.dart';
+import 'package:bruno_fork/src/components/guide/brn_flutter_guide.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 enum GuideMode { force, soft }
@@ -184,7 +184,7 @@ class BrnTipInfoWidget extends StatelessWidget {
                     onTap: () {
                       onClose();
                     },
-                    child: BrunoTools.getAssetImageWithColor(BrnAsset.ICON_CLOSE, Colors.black),
+                    child: bruno_forkTools.getAssetImageWithColor(BrnAsset.ICON_CLOSE, Colors.black),
                   ),
           ),
         ],

@@ -1,8 +1,8 @@
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/constants/brn_strings_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_abnormal_state_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/constants/brn_strings_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_abnormal_state_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 页面状态
@@ -29,21 +29,21 @@ class BrnAbnormalStateUtils {
       {Image img}) {
     if (AbnormalState.getDataFailed == status) {
       return BrnAbnormalStateWidget(
-        img: img ?? BrunoTools.getAssetImage(BrnAsset.emptyState),
+        img: img ?? bruno_forkTools.getAssetImage(BrnAsset.emptyState),
         title: BrnStrings.getDateFailed,
         operateTexts: <String>[BrnStrings.clickPageRetry],
         action: action,
       );
     } else if (AbnormalState.networkConnectError == status) {
       return BrnAbnormalStateWidget(
-        img: img ?? BrunoTools.getAssetImage(BrnAsset.emptyState),
+        img: img ?? bruno_forkTools.getAssetImage(BrnAsset.emptyState),
         title: BrnStrings.networkConnectError,
         operateTexts: <String>[BrnStrings.clickPageRetry],
         action: action,
       );
     } else if (AbnormalState.noData == status) {
       return BrnAbnormalStateWidget(
-        img: img ?? BrunoTools.getAssetImage(BrnAsset.emptyState),
+        img: img ?? bruno_forkTools.getAssetImage(BrnAsset.emptyState),
         title: BrnStrings.noData,
       );
     } else {

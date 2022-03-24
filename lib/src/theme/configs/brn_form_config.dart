@@ -1,7 +1,7 @@
-import 'package:bruno/src/theme/base/brn_base_config.dart';
-import 'package:bruno/src/theme/base/brn_text_style.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_common_config.dart';
+import 'package:bruno_fork/src/theme/base/brn_base_config.dart';
+import 'package:bruno_fork/src/theme/base/brn_text_style.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_common_config.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: form 表单项主配置类
@@ -99,7 +99,7 @@ class BrnFormItemConfig extends BrnBaseConfig {
   /// ① 尝试获取最近的配置 [topRadius] 若配不为 null，直接使用该配置.
   /// ② [topRadius] 若为 null，尝试使用 全局配置中的配置 BrnFormItemConfig.
   /// ③ 如果全局配置中的配置同样为 null 则根据 [configId] 取出全局配置。
-  /// ④ 如果没有配置 [configId] 的全局配置，则使用 Bruno 默认的配置
+  /// ④ 如果没有配置 [configId] 的全局配置，则使用 bruno_fork 默认的配置
   @override
   void initThemeConfig(String configId, {BrnCommonConfig currentLevelCommonConfig}) {
     super.initThemeConfig(configId, currentLevelCommonConfig: currentLevelCommonConfig);

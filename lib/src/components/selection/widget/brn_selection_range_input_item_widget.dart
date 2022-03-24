@@ -1,6 +1,6 @@
-import 'package:bruno/src/components/selection/bean/brn_selection_common_entity.dart';
-import 'package:bruno/src/theme/configs/brn_selection_config.dart';
-import 'package:bruno/src/utils/brn_event_bus.dart';
+import 'package:bruno_fork/src/components/selection/bean/brn_selection_common_entity.dart';
+import 'package:bruno_fork/src/theme/configs/brn_selection_config.dart';
+import 'package:bruno_fork/src/utils/brn_event_bus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

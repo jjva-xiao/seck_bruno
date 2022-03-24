@@ -1,8 +1,8 @@
-import 'package:bruno/src/components/picker/base/brn_picker_title_config.dart';
-import 'package:bruno/src/components/picker/brn_tags_common_picker.dart';
-import 'package:bruno/src/components/picker/brn_tags_picker_config.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_picker_config.dart';
+import 'package:bruno_fork/src/components/picker/base/brn_picker_title_config.dart';
+import 'package:bruno_fork/src/components/picker/brn_tags_common_picker.dart';
+import 'package:bruno_fork/src/components/picker/brn_tags_picker_config.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_picker_config.dart';
 import 'package:flutter/material.dart';
 
 ///样式的枚举类型

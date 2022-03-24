@@ -1,4 +1,4 @@
-import 'package:bruno/src/utils/css/brn_core_funtion.dart';
+import 'package:bruno_fork/src/utils/css/brn_core_funtion.dart';
 import 'package:flutter/material.dart';
 
 /// 将CSS格式的标签转为文本

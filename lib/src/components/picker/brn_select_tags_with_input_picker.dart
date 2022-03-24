@@ -1,7 +1,7 @@
-import 'package:bruno/src/components/picker/brn_picker_cliprrect.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/picker/brn_picker_cliprrect.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -264,7 +264,7 @@ class _BrnSelectTagsWithInputPickerWidgetState
               },
               child: Padding(
                 padding: EdgeInsets.all(4),
-                child: BrunoTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
+                child: bruno_forkTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
               ))
         ],
       ),

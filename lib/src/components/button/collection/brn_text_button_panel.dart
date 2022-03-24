@@ -1,8 +1,8 @@
-import 'package:bruno/src/components/popup/brn_popup_window.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_multi_click_util.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/popup/brn_popup_window.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_multi_click_util.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 多个文字按钮组成的按钮集合
@@ -153,8 +153,8 @@ class _BrnTextButtonPanelState extends State<BrnTextButtonPanel> {
       );
 
       Widget imageWidget = _isExpanded
-          ? BrunoTools.getAssetImage(BrnAsset.ICON_UP_ARROW)
-          : BrunoTools.getAssetImage(BrnAsset.ICON_DOWN_ARROW);
+          ? bruno_forkTools.getAssetImage(BrnAsset.ICON_UP_ARROW)
+          : bruno_forkTools.getAssetImage(BrnAsset.ICON_DOWN_ARROW);
 
       return GestureDetector(
           child: Row(

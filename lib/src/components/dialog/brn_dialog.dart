@@ -1,8 +1,8 @@
-import 'package:bruno/src/components/dialog/brn_dialog_utils.dart';
-import 'package:bruno/src/theme/base/brn_text_style.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_dialog_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/dialog/brn_dialog_utils.dart';
+import 'package:bruno_fork/src/theme/base/brn_text_style.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_dialog_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -346,7 +346,7 @@ class BrnDialog extends AlertDialog {
       return _createWidget(iconImage);
     }
     if (showIcon) {
-      return _createWidget(BrunoTools.getAssetImageWithBandColor("icons/icon_alter.png"));
+      return _createWidget(bruno_forkTools.getAssetImageWithBandColor("icons/icon_alter.png"));
     }
 
     return SizedBox(

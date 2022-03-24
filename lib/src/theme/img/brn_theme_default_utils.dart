@@ -1,21 +1,21 @@
 import 'dart:ui';
 
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/img/brn_theme_img_utils.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/img/brn_theme_img_utils.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 class BrnThemeImg {
-  BrnThemeImgUtils _defaultBrunoImg;
+  BrnThemeImgUtils _defaultbruno_forkImg;
 
   static BrnThemeImg _instance;
 
-  BrnThemeImg._(BrnThemeImgUtils brunoImgUtils) {
-    this._defaultBrunoImg = brunoImgUtils ?? BrnDefaultThemeImgUtil();
+  BrnThemeImg._(BrnThemeImgUtils bruno_forkImgUtils) {
+    this._defaultbruno_forkImg = bruno_forkImgUtils ?? BrnDefaultThemeImgUtil();
   }
 
-  factory BrnThemeImg.register({BrnThemeImgUtils brunoImgUtils}) {
-    _instance = BrnThemeImg._(brunoImgUtils);
+  factory BrnThemeImg.register({BrnThemeImgUtils bruno_forkImgUtils}) {
+    _instance = BrnThemeImg._(bruno_forkImgUtils);
     return _instance;
   }
 
@@ -27,19 +27,19 @@ class BrnThemeImg {
   }
 
   Image get ARROW_REFRESH_UP =>
-      _defaultBrunoImg?.getARROW_REFRESH_UP() ??
-      BrunoTools.getAssetImage(BrnAsset.refreshArrowUp);
+      _defaultbruno_forkImg?.getARROW_REFRESH_UP() ??
+      bruno_forkTools.getAssetImage(BrnAsset.refreshArrowUp);
 
   Image get ARROW_REFRESH_DOWN =>
-      _defaultBrunoImg?.getARROW_REFRESH_DOWN() ??
-      BrunoTools.getAssetImage(BrnAsset.refreshArrowDown);
+      _defaultbruno_forkImg?.getARROW_REFRESH_DOWN() ??
+      bruno_forkTools.getAssetImage(BrnAsset.refreshArrowDown);
 
   Image get CHECKED_STATUS =>
-      _defaultBrunoImg?.getCHECKED_STATUS() ??
-      BrunoTools.getAssetImage(BrnAsset.SELECT_CHECKED_STATUS);
+      _defaultbruno_forkImg?.getCHECKED_STATUS() ??
+      bruno_forkTools.getAssetImage(BrnAsset.SELECT_CHECKED_STATUS);
 
   Image get STEP_ICON {
-    return _defaultBrunoImg?.getStepIcon() ?? BrunoTools.getAssetImage(BrnAsset.stepTitle);
+    return _defaultbruno_forkImg?.getStepIcon() ?? bruno_forkTools.getAssetImage(BrnAsset.stepTitle);
   }
 }
 
@@ -47,21 +47,21 @@ class BrnThemeImg {
 class BrnDefaultThemeImgUtil extends BrnThemeImgUtils {
   @override
   Image getARROW_REFRESH_UP() {
-    return BrunoTools.getAssetImageWithBandColor(BrnAsset.refreshArrowUp);
+    return bruno_forkTools.getAssetImageWithBandColor(BrnAsset.refreshArrowUp);
   }
 
   @override
   Image getARROW_REFRESH_DOWN() {
-    return BrunoTools.getAssetImageWithBandColor(BrnAsset.refreshArrowDown);
+    return bruno_forkTools.getAssetImageWithBandColor(BrnAsset.refreshArrowDown);
   }
 
   @override
   Image getCHECKED_STATUS() {
-    return BrunoTools.getAssetImageWithBandColor(BrnAsset.SELECT_CHECKED_STATUS);
+    return bruno_forkTools.getAssetImageWithBandColor(BrnAsset.SELECT_CHECKED_STATUS);
   }
 
   @override
   Image getStepIcon() {
-    return BrunoTools.getAssetImageWithBandColor(BrnAsset.stepTitle);
+    return bruno_forkTools.getAssetImageWithBandColor(BrnAsset.stepTitle);
   }
 }

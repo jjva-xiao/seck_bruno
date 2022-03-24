@@ -1,7 +1,7 @@
-import 'package:bruno/src/components/appraise/brn_appraise.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 星级评价列表，默认支持5个
@@ -28,10 +28,10 @@ class BrnAppraiseStarListView extends StatefulWidget {
 }
 
 class _BrnAppraiseStarListViewState extends State<BrnAppraiseStarListView> {
-  Image _star = BrunoTools.getAssetImage(BrnAsset.iconStarSize, gaplessPlayback: true);
+  Image _star = bruno_forkTools.getAssetImage(BrnAsset.iconStarSize, gaplessPlayback: true);
 
   Image _selectedStar =
-      BrunoTools.getAssetImage(BrnAsset.iconStarSizeSelected, gaplessPlayback: true);
+      bruno_forkTools.getAssetImage(BrnAsset.iconStarSizeSelected, gaplessPlayback: true);
 
   int _selectedIndex = -1;
 

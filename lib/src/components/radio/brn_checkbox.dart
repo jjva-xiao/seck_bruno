@@ -1,4 +1,4 @@
-import 'package:bruno/bruno.dart';
+import 'package:bruno_fork/bruno_fork.dart';
 import 'package:flutter/material.dart';
 
 ///多选按钮
@@ -78,10 +78,10 @@ class BrnCheckboxState extends State<BrnCheckbox> {
       childOnRight: widget.childOnRight,
       mainAxisAlignment: widget.mainAxisAlignment,
       mainAxisSize: widget.mainAxisSize,
-      selectedImage: BrunoTools.getAssetImageWithBandColor(BrnAsset.ICON_RADIO_MULTI_SELECTED),
-      unselectedImage: BrunoTools.getAssetImage(BrnAsset.ICON_RADIO_UNSELECTED),
-      disSelectedImage: BrunoTools.getAssetImage(BrnAsset.ICON_RADIO_DISABLE_SINGLE_SELECTED),
-      disUnselectedImage: BrunoTools.getAssetImage(BrnAsset.ICON_RADIO_DISABLE_UNSELECTED),
+      selectedImage: bruno_forkTools.getAssetImageWithBandColor(BrnAsset.ICON_RADIO_MULTI_SELECTED),
+      unselectedImage: bruno_forkTools.getAssetImage(BrnAsset.ICON_RADIO_UNSELECTED),
+      disSelectedImage: bruno_forkTools.getAssetImage(BrnAsset.ICON_RADIO_DISABLE_SINGLE_SELECTED),
+      disUnselectedImage: bruno_forkTools.getAssetImage(BrnAsset.ICON_RADIO_DISABLE_UNSELECTED),
       child: widget.child,
       onRadioItemClick: () {
         setState(() {

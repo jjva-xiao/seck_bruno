@@ -1,11 +1,11 @@
 import 'dart:ui';
 
-import 'package:bruno/src/components/navbar/brn_appbar.dart';
-import 'package:bruno/src/components/navbar/brn_appbar_theme.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/constants/brn_strings_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/navbar/brn_appbar.dart';
+import 'package:bruno_fork/src/components/navbar/brn_appbar_theme.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/constants/brn_strings_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -261,7 +261,7 @@ class __SearchInputWidgetState extends State<_SearchInputWidget> {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.only(right: 8.0),
-                child: BrunoTools.getAssetSizeImage(BrnAsset.ICON_SEARCH, 16, 16),
+                child: bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_SEARCH, 16, 16),
               ),
               Expanded(
                 child: TextField(

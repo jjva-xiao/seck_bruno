@@ -1,10 +1,10 @@
 import 'dart:ui' as ui;
 
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/base/brn_text_style.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_pair_info_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/base/brn_text_style.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_pair_info_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 两列key-value 展示信息的集合,需要配合[BrnRichGridInfo]使用
@@ -231,7 +231,7 @@ class BrnRichGridInfo {
           },
           child: Padding(
             padding: EdgeInsets.only(left: isKey ? 0 : 4),
-            child: BrunoTools.getAssetSizeImage(BrnAsset.ICON_PAIR_INFO_QUESTION, 14, 14),
+            child: bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_PAIR_INFO_QUESTION, 14, 14),
           ));
     }
 

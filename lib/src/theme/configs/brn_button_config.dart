@@ -1,8 +1,8 @@
-import 'package:bruno/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
 
 /// 按钮基础配置
 class BrnButtonConfig extends BrnBaseConfig {
-  ///遵循外部主题配置，Bruno默认配置[BrnDefaultConfigUtils.defaultButtonConfig]
+  ///遵循外部主题配置，bruno_fork默认配置[BrnDefaultConfigUtils.defaultButtonConfig]
   BrnButtonConfig({
     this.bigButtonRadius,
     this.bigButtonHeight,

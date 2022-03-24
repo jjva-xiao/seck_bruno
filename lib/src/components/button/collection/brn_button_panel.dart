@@ -1,9 +1,9 @@
-import 'package:bruno/src/components/button/brn_small_main_button.dart';
-import 'package:bruno/src/components/button/brn_small_outline_button.dart';
-import 'package:bruno/src/components/popup/brn_popup_window.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/button/brn_small_main_button.dart';
+import 'package:bruno_fork/src/components/button/brn_small_outline_button.dart';
+import 'package:bruno_fork/src/components/popup/brn_popup_window.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -187,7 +187,7 @@ class _BrnButtonPanelState extends State<BrnButtonPanel> {
         child: Container(
           color: Colors.transparent,
           height: 32,
-          child: BrunoTools.getAssetImage(BrnAsset.iconMore),
+          child: bruno_forkTools.getAssetImage(BrnAsset.iconMore),
         ),
         key: _popWindowKey,
         onTap: () {

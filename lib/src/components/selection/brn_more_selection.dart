@@ -1,15 +1,15 @@
 import 'dart:async';
 
-import 'package:bruno/src/components/button/brn_big_main_button.dart';
-import 'package:bruno/src/components/line/brn_line.dart';
-import 'package:bruno/src/components/selection/bean/brn_selection_common_entity.dart';
-import 'package:bruno/src/components/selection/brn_selection_util.dart';
-import 'package:bruno/src/components/selection/brn_selection_view.dart';
-import 'package:bruno/src/components/selection/widget/brn_selection_more_item_widget.dart';
-import 'package:bruno/src/components/toast/brn_toast.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/configs/brn_selection_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/button/brn_big_main_button.dart';
+import 'package:bruno_fork/src/components/line/brn_line.dart';
+import 'package:bruno_fork/src/components/selection/bean/brn_selection_common_entity.dart';
+import 'package:bruno_fork/src/components/selection/brn_selection_util.dart';
+import 'package:bruno_fork/src/components/selection/brn_selection_view.dart';
+import 'package:bruno_fork/src/components/selection/widget/brn_selection_more_item_widget.dart';
+import 'package:bruno_fork/src/components/toast/brn_toast.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/configs/brn_selection_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 更多的多选页面
@@ -329,7 +329,7 @@ class MoreBottomSelectionWidget extends StatelessWidget {
                 Container(
                   height: 24,
                   width: 24,
-                  child: BrunoTools.getAssetImage(BrnAsset.iconSelectionReset),
+                  child: bruno_forkTools.getAssetImage(BrnAsset.iconSelectionReset),
                 ),
                 Text(
                   '重置',

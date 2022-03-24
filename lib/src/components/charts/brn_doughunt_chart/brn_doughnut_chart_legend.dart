@@ -1,4 +1,4 @@
-import 'package:bruno/src/components/charts/brn_doughunt_chart/brn_doughnut_chart.dart';
+import 'package:bruno_fork/src/components/charts/brn_doughunt_chart/brn_doughnut_chart.dart';
 import 'package:flutter/material.dart';
 
 enum BrnDoughnutChartLegendStyle {

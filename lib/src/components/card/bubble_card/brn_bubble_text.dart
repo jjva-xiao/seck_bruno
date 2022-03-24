@@ -1,7 +1,7 @@
-import 'package:bruno/src/components/text/brn_expandable_text.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/components/text/brn_expandable_text.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
 import 'package:flutter/material.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 
 /// 具备展开收起功能的气泡背景文字面板
 /// 气泡：背景色为Color(0xFFF8F8F8)的灰色Container
@@ -46,7 +46,7 @@ class BrnBubbleText extends StatelessWidget {
   @override
   @override
   Widget build(BuildContext context) {
-    Image image = BrunoTools.getAssetImage('icons/icon_right_top_pointer.png');
+    Image image = bruno_forkTools.getAssetImage('icons/icon_right_top_pointer.png');
     Widget bubbleText = Column(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.start,

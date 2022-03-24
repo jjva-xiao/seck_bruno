@@ -1,12 +1,12 @@
-import 'package:bruno/src/theme/base/brn_base_config.dart';
-import 'package:bruno/src/theme/base/brn_text_style.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_common_config.dart';
+import 'package:bruno_fork/src/theme/base/brn_base_config.dart';
+import 'package:bruno_fork/src/theme/base/brn_text_style.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_common_config.dart';
 import 'package:flutter/material.dart';
 
 /// 选择器配置
 class BrnPickerConfig extends BrnBaseConfig {
-  ///遵循外部主题配置，Bruno默认配置[BrnDefaultConfigUtils.defaultPickerConfig]
+  ///遵循外部主题配置，bruno_fork默认配置[BrnDefaultConfigUtils.defaultPickerConfig]
   BrnPickerConfig(
       {this.backgroundColor,
       this.cancelTextStyle,

@@ -1,8 +1,8 @@
-import 'package:bruno/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
 
 ///BrnPairInfoTable的配置文件   全局配置
 class BrnPairInfoTableConfig extends BrnBaseConfig {
-  ///遵循外部主题配置，Bruno默认配置[BrnDefaultConfigUtils.defaultPairInfoTableConfig]
+  ///遵循外部主题配置，bruno_fork默认配置[BrnDefaultConfigUtils.defaultPairInfoTableConfig]
   BrnPairInfoTableConfig({
     this.rowSpacing,
     this.itemSpacing,
@@ -83,7 +83,7 @@ class BrnPairInfoTableConfig extends BrnBaseConfig {
 }
 
 class BrnPairRichInfoGridConfig extends BrnBaseConfig {
-  ///遵循外部主题配置，Bruno默认配置[BrnDefaultConfigUtils.defaultPairRichInfoGridConfig]
+  ///遵循外部主题配置，bruno_fork默认配置[BrnDefaultConfigUtils.defaultPairRichInfoGridConfig]
   BrnPairRichInfoGridConfig({
     this.rowSpacing,
     this.itemSpacing,

@@ -1,10 +1,10 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bruno/src/components/charts/broken_line/brn_base_painter.dart';
-import 'package:bruno/src/components/charts/broken_line/brn_line_data.dart';
-import 'package:bruno/src/components/charts/broken_line/monotone_x.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/components/charts/broken_line/brn_base_painter.dart';
+import 'package:bruno_fork/src/components/charts/broken_line/brn_line_data.dart';
+import 'package:bruno_fork/src/components/charts/broken_line/monotone_x.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
 import 'package:flutter/material.dart';
 import 'package:path_drawing/path_drawing.dart';
 

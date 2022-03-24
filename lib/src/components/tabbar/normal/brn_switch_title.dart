@@ -1,6 +1,6 @@
-import 'package:bruno/src/components/line/brn_line.dart';
-import 'package:bruno/src/components/tabbar/indicator/brn_custom_width_indicator.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/components/line/brn_line.dart';
+import 'package:bruno_fork/src/components/tabbar/indicator/brn_custom_width_indicator.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 一级切换标题

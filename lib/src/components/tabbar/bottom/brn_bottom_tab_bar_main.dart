@@ -1,7 +1,7 @@
 import 'dart:collection' show Queue;
 import 'dart:math' as math;
 
-import 'package:bruno/src/components/tabbar/bottom/brn_bottom_tab_bar_item.dart';
+import 'package:bruno_fork/src/components/tabbar/bottom/brn_bottom_tab_bar_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

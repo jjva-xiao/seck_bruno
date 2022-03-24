@@ -1,9 +1,9 @@
-import 'package:bruno/src/components/button/brn_big_main_button.dart';
-import 'package:bruno/src/components/dialog/brn_dialog.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_dialog_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/button/brn_big_main_button.dart';
+import 'package:bruno_fork/src/components/dialog/brn_dialog.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_dialog_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 class BrnDialogConstants {
@@ -88,7 +88,7 @@ class BrnEnhanceOperationDialog extends StatelessWidget {
         themeData: themeData,
         iconImage: (iconType == BrnDialogConstants.ICON_CUSTOM)
             ? customIconWidget
-            : BrunoTools.getAssetImage(BrnDialogConstants.shareItemImagePathList[iconType]),
+            : bruno_forkTools.getAssetImage(BrnDialogConstants.shareItemImagePathList[iconType]),
         titleText: titleText,
         messageText: descText,
         warningWidget: Container(

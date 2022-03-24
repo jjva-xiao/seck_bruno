@@ -1,7 +1,7 @@
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/constants/brn_strings_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/constants/brn_strings_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -279,7 +279,7 @@ class _SearchTextState extends State<BrnSearchText> {
                           visible: textEditingController.text.isNotEmpty,
                           child: Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 12.0),
-                            child: BrunoTools.getAssetImage(
+                            child: bruno_forkTools.getAssetImage(
                               BrnAsset.ICON_DELETE_TEXT,
                             ),
                           ),

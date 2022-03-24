@@ -1,4 +1,4 @@
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 自定义界面元素中的虚线分割线

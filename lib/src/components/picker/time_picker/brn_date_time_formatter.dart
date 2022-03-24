@@ -1,17 +1,17 @@
 import 'dart:math';
 
-import 'package:bruno/src/components/picker/time_picker/brn_date_picker_constants.dart';
-import 'package:bruno/src/components/picker/time_picker/date_picker/brn_date_picker.dart';
-import 'package:bruno/src/components/picker/time_picker/date_range_picker/brn_date_range_picker.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
-import 'package:bruno/src/utils/i18n/brn_date_picker_i18n.dart';
+import 'package:bruno_fork/src/components/picker/time_picker/brn_date_picker_constants.dart';
+import 'package:bruno_fork/src/components/picker/time_picker/date_picker/brn_date_picker.dart';
+import 'package:bruno_fork/src/components/picker/time_picker/date_range_picker/brn_date_range_picker.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/utils/i18n/brn_date_picker_i18n.dart';
 import 'package:intl/intl.dart';
 
 const String DATE_FORMAT_SEPARATOR = r'[|,-\._: ]+';
 
 class DateTimeFormatter {
   static DateTime convertStringToDate(String format, String date) {
-    if (BrunoTools.isEmpty(format) || BrunoTools.isEmpty(date)) return null;
+    if (bruno_forkTools.isEmpty(format) || bruno_forkTools.isEmpty(date)) return null;
 
     return DateFormat(format).parse(date);
   }

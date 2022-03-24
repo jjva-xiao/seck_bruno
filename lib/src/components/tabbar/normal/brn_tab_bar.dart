@@ -1,12 +1,12 @@
 import 'dart:ui';
 
 import 'package:badges/badges.dart';
-import 'package:bruno/src/components/popup/brn_measure_size.dart';
-import 'package:bruno/src/components/tabbar/indicator/brn_custom_width_indicator.dart';
-import 'package:bruno/src/components/tabbar/normal/brn_tabbar_controller.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/popup/brn_measure_size.dart';
+import 'package:bruno_fork/src/components/tabbar/indicator/brn_custom_width_indicator.dart';
+import 'package:bruno_fork/src/components/tabbar/normal/brn_tabbar_controller.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -320,8 +320,8 @@ class BrnTabBarState extends State<BrnTabBar> {
               ],
             ),
             child: !_brnTabbarController.isShow
-                ? BrunoTools.getAssetImage(BrnAsset.ICON_TRIANGLE_DOWN)
-                : BrunoTools.getAssetImageWithBandColor(BrnAsset.ICON_TRIANGLE_UP)),
+                ? bruno_forkTools.getAssetImage(BrnAsset.ICON_TRIANGLE_DOWN)
+                : bruno_forkTools.getAssetImageWithBandColor(BrnAsset.ICON_TRIANGLE_UP)),
       ),
     );
   }

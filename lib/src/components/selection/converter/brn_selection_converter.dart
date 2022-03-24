@@ -1,6 +1,6 @@
-import 'package:bruno/src/components/selection/bean/brn_selection_common_entity.dart';
-import 'package:bruno/src/components/selection/brn_selection_util.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/selection/bean/brn_selection_common_entity.dart';
+import 'package:bruno_fork/src/components/selection/brn_selection_util.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 
 abstract class BrnSelectionConverterDelegate {
   /// 统一的数据结构 转换为 用户需要的数据结构，并通过 [BrnSelectionOnSelectionChanged] 回传给用户使用。
@@ -53,9 +53,9 @@ Map<String, String> getSelectionParams(List<BrnSelectionEntity> selectedResults)
       BrnSelectionEntity selectedCustomInputItem =
           BrnSelectionUtil.getFilledCustomInputItem(menuItemEntity.children);
       if (selectedCustomInputItem != null &&
-          !BrunoTools.isEmpty(selectedCustomInputItem.customMap)) {
+          !bruno_forkTools.isEmpty(selectedCustomInputItem.customMap)) {
         String key = selectedCustomInputItem.parent.key;
-        if (!BrunoTools.isEmpty(key)) {
+        if (!bruno_forkTools.isEmpty(key)) {
           params[key] = selectedCustomInputItem.customMap["min"] +
               ':' +
               selectedCustomInputItem.customMap["max"];
@@ -89,11 +89,11 @@ Map<String, String> getCurrentSelectionEntityParams(BrnSelectionEntity selection
   String parentKey = selectionEntity.key;
   var selectedEntity = selectionEntity.children
       ?.where((BrnSelectionEntity f) => f.isSelected)
-      ?.where((BrnSelectionEntity f) => !BrunoTools.isEmpty(f.value))
+      ?.where((BrnSelectionEntity f) => !bruno_forkTools.isEmpty(f.value))
       ?.map((BrnSelectionEntity f) => f.value)
       ?.toList();
   String selectedParams = selectedEntity == null ? "" : selectedEntity.join(",");
-  if (!BrunoTools.isEmpty(selectedParams) && !BrunoTools.isEmpty(parentKey)) {
+  if (!bruno_forkTools.isEmpty(selectedParams) && !bruno_forkTools.isEmpty(parentKey)) {
     params[parentKey] = selectedParams;
   }
   return params;

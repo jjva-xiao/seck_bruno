@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bruno/src/components/charts/broken_line/brn_line_data.dart';
-import 'package:bruno/src/components/charts/broken_line/brn_line_painter.dart';
-import 'package:bruno/src/components/charts/broken_line/brn_line_y_painter.dart';
+import 'package:bruno_fork/src/components/charts/broken_line/brn_line_data.dart';
+import 'package:bruno_fork/src/components/charts/broken_line/brn_line_painter.dart';
+import 'package:bruno_fork/src/components/charts/broken_line/brn_line_y_painter.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 

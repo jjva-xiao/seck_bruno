@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'package:bruno/src/components/form/utils/brn_form_util.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_form_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
-import 'package:bruno/src/utils/font/brn_font.dart';
+import 'package:bruno_fork/src/components/form/utils/brn_form_util.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_form_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/utils/font/brn_font.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -133,9 +133,9 @@ class _ExpansionElementState extends State<ExpansionElementWidget>
     }
 
     if (_isExpanded) {
-      arrowIcon = BrunoTools.getAssetImage("icons/icon_down_arrow.png");
+      arrowIcon = bruno_forkTools.getAssetImage("icons/icon_down_arrow.png");
     } else {
-      arrowIcon = BrunoTools.getAssetImage("icons/icon_up_arrow.png");
+      arrowIcon = bruno_forkTools.getAssetImage("icons/icon_up_arrow.png");
     }
   }
 

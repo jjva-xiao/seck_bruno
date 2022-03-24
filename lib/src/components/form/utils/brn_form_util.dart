@@ -1,8 +1,8 @@
-import 'package:bruno/src/components/form/base/brn_form_item_type.dart';
-import 'package:bruno/src/components/form/base/input_item_interface.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/form/base/brn_form_item_type.dart';
+import 'package:bruno_fork/src/components/form/base/input_item_interface.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/widgets.dart';
 
 class BrnFormUtil {
@@ -115,9 +115,9 @@ class BrnFormUtil {
 
   static Widget getPrefixIcon(String type) {
     if (type == BrnPrefixIconType.TYPE_ADD) {
-      return BrunoTools.getAssetImageWithBandColor(BrnAsset.ICON_ADD_FORM_ITEM);
+      return bruno_forkTools.getAssetImageWithBandColor(BrnAsset.ICON_ADD_FORM_ITEM);
     } else if (type == BrnPrefixIconType.TYPE_REMOVE) {
-      return BrunoTools.getAssetImage(BrnAsset.ICON_REMOVE_FORM_ITEM);
+      return bruno_forkTools.getAssetImage(BrnAsset.ICON_REMOVE_FORM_ITEM);
     } else {
       return Container();
     }
@@ -140,18 +140,18 @@ class BrnFormUtil {
     return Container(
       padding: isRequire ? EdgeInsets.only(right: 2) : EdgeInsets.only(right: 0),
       child: isRequire
-          ? BrunoTools.getAssetSizeImage(BrnAsset.ICON_REQUIRE_RED, 8, 8, color: Color(0xFFFA3F3F))
+          ? bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_REQUIRE_RED, 8, 8, color: Color(0xFFFA3F3F))
           : null,
     );
   }
 
   /// 视觉同学要求修改右箭头图标
   static Image getRightArrowIcon() {
-    return BrunoTools.getAssetSizeImage(BrnAsset.ICON_RIGHT_ARROW, rightArrowSize, rightArrowSize);
+    return bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_RIGHT_ARROW, rightArrowSize, rightArrowSize);
   }
 
   static Image getQuestionMarkIcon() {
-    return BrunoTools.getAssetImage(BrnAsset.ICON_QUESTION);
+    return bruno_forkTools.getAssetImage(BrnAsset.ICON_QUESTION);
   }
 
   /// 设置录入项总的padding, 不包括顶部和底部padding

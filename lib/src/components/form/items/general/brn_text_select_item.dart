@@ -1,11 +1,11 @@
 import 'dart:math';
 
-import 'package:bruno/src/components/form/base/brn_form_item_type.dart';
-import 'package:bruno/src/components/form/utils/brn_form_util.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_form_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
-import 'package:bruno/src/utils/font/brn_font.dart';
+import 'package:bruno_fork/src/components/form/base/brn_form_item_type.dart';
+import 'package:bruno_fork/src/components/form/utils/brn_form_util.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_form_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/utils/font/brn_font.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -378,9 +378,9 @@ class BrnTextSelectFormItemState extends State<BrnTextSelectFormItem> {
 
   String getCalculateText() {
     String value = '请选择';
-    if (!BrunoTools.isEmpty(widget.value)) {
+    if (!bruno_forkTools.isEmpty(widget.value)) {
       value = widget.value;
-    } else if (!BrunoTools.isEmpty(widget.hint)) {
+    } else if (!bruno_forkTools.isEmpty(widget.hint)) {
       value = widget.hint;
     }
     return value;

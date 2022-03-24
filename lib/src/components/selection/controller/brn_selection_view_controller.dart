@@ -1,4 +1,4 @@
-import 'package:bruno/src/utils/brn_event_bus.dart';
+import 'package:bruno_fork/src/utils/brn_event_bus.dart';
 import "package:flutter/foundation.dart";
 import 'package:flutter/material.dart';
 

@@ -1,6 +1,6 @@
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 横向步骤条,是一种常见的导航形式，它具有导航通用的属性：告知用户”我在哪/我能去哪“，
@@ -20,7 +20,7 @@ class BrnHorizontalStepsManager {
   /// completedIcon: 自定义已完成状态的icon
   ///
   Widget buildSteps(
-      {List<BrunoStep> steps,
+      {List<bruno_forkStep> steps,
       int currentIndex,
       bool isCompleted,
       Widget doingIcon,
@@ -77,7 +77,7 @@ class BrnHorizontalSteps extends StatefulWidget {
   /// The steps of the stepper whose titles, subtitles, icons always get shown.
   ///
   /// The length of [steps] must not change.
-  final List<BrunoStep> steps;
+  final List<bruno_forkStep> steps;
 
   BrnStepsController controller;
 
@@ -135,20 +135,20 @@ class BrnHorizontalStepsState extends State<BrnHorizontalSteps> {
     return content;
   }
 
-  Widget _applyStepIcon(BrunoStep step, int index) {
+  Widget _applyStepIcon(bruno_forkStep step, int index) {
     Widget icon;
     if (widget.controller.isCompleted) {
       return _getCompletedIcon(step);
     }
     if (step.state != null) {
       switch (step.state) {
-        case BrunoStepState.indexed:
+        case bruno_forkStepState.indexed:
           icon = getIndexIcon(index);
           break;
-        case BrunoStepState.complete:
+        case bruno_forkStepState.complete:
           icon = _getCompletedIcon(step);
           break;
-        case BrunoStepState.doing:
+        case bruno_forkStepState.doing:
           icon = _getDoingIcon(step);
           break;
         default:
@@ -169,7 +169,7 @@ class BrnHorizontalStepsState extends State<BrnHorizontalSteps> {
     return icon;
   }
 
-  Widget _applyStepItem(BrunoStep step, int index) {
+  Widget _applyStepItem(bruno_forkStep step, int index) {
     return Container(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -197,25 +197,25 @@ class BrnHorizontalStepsState extends State<BrnHorizontalSteps> {
     Widget icon;
     switch (index) {
       case 1:
-        icon = BrunoTools.getAssetSizeImage(BrnAsset.ICON_STEP_2, 20, 20);
+        icon = bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STEP_2, 20, 20);
         break;
       case 2:
-        icon = BrunoTools.getAssetSizeImage(BrnAsset.ICON_STEP_3, 20, 20);
+        icon = bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STEP_3, 20, 20);
         break;
       case 3:
-        icon = BrunoTools.getAssetSizeImage(BrnAsset.ICON_STEP_4, 20, 20);
+        icon = bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STEP_4, 20, 20);
         break;
       case 4:
-        icon = BrunoTools.getAssetSizeImage(BrnAsset.ICON_STEP_5, 20, 20);
+        icon = bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STEP_5, 20, 20);
         break;
       default:
-        icon = BrunoTools.getAssetSizeImage(BrnAsset.ICON_STEP_DOING, 20, 20);
+        icon = bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STEP_DOING, 20, 20);
         break;
     }
     return icon;
   }
 
-  _applyStepContent(BrunoStep step, int index) {
+  _applyStepContent(bruno_forkStep step, int index) {
     if (step.stepContent != null) {
       return step.stepContent;
     }
@@ -230,7 +230,7 @@ class BrnHorizontalStepsState extends State<BrnHorizontalSteps> {
         ));
   }
 
-  Widget _getCompletedIcon(BrunoStep step) {
+  Widget _getCompletedIcon(bruno_forkStep step) {
     if (step.completedIcon != null) {
       // 如果Step中自定义completedIcon不为空，则使用自定义的icon
       return step.completedIcon;
@@ -240,11 +240,11 @@ class BrnHorizontalStepsState extends State<BrnHorizontalSteps> {
       return widget.completedIcon;
     }
     // 使用组件默认的icon
-    return BrunoTools.getAssetSizeImage(BrnAsset.ICON_STEP_COMPLETED, 20, 20,
+    return bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STEP_COMPLETED, 20, 20,
         color: BrnThemeConfigurator.instance.getConfig().commonConfig.brandPrimary);
   }
 
-  Widget _getDoingIcon(BrunoStep step) {
+  Widget _getDoingIcon(bruno_forkStep step) {
     if (step.doingIcon != null) {
       // 如果Step中自定义doingIcon不为空，则使用自定义的icon
       return step.doingIcon;
@@ -254,12 +254,12 @@ class BrnHorizontalStepsState extends State<BrnHorizontalSteps> {
       return widget.doingIcon;
     }
     // 使用组件默认的icon
-    return BrunoTools.getAssetSizeImage(BrnAsset.ICON_STEP_DOING, 20, 20,
+    return bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_STEP_DOING, 20, 20,
         color: BrnThemeConfigurator.instance.getConfig().commonConfig.brandPrimary);
   }
 }
 
-enum BrunoStepState {
+enum bruno_forkStepState {
   /// A step that displays its index in its circle.
   indexed,
 
@@ -271,11 +271,11 @@ enum BrunoStepState {
 }
 
 @immutable
-class BrunoStep {
+class bruno_forkStep {
   /// Creates a step for a [Stepper].
   ///
   /// The [stepContent], [doingIcon] arguments must not be null.
-  const BrunoStep({
+  const bruno_forkStep({
     this.stepContent,
     this.stepContentText,
     this.doingIcon,
@@ -297,7 +297,7 @@ class BrunoStep {
 
   /// The state of the step which determines the styling of its components
   /// and whether steps are interactive.
-  final BrunoStepState state;
+  final bruno_forkStepState state;
 }
 
 class BrnStepsController with ChangeNotifier {

@@ -1,5 +1,5 @@
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 气泡背景的文本
@@ -42,7 +42,7 @@ class BrnInsertInfo extends StatelessWidget {
     );
 
     Color color = Color(0xFFF8F8F8);
-    Image image = BrunoTools.getAssetImage('icons/icon_right_top_pointer.png');
+    Image image = bruno_forkTools.getAssetImage('icons/icon_right_top_pointer.png');
 
     Widget bubbleText = Row(
       mainAxisSize: MainAxisSize.min,

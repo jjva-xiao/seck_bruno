@@ -1,5 +1,5 @@
-import 'package:bruno/src/components/appraise/brn_appraise.dart';
-import 'package:bruno/src/components/appraise/brn_appraise_header.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise_header.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 评价组件bottom picker，

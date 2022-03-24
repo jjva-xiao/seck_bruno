@@ -2,7 +2,7 @@ import 'dart:core';
 import 'dart:math';
 import 'dart:ui';
 
-import 'package:bruno/src/components/popup/brn_measure_size.dart';
+import 'package:bruno_fork/src/components/popup/brn_measure_size.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

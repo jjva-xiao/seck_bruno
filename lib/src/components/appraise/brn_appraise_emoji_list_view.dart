@@ -1,6 +1,6 @@
-import 'package:bruno/src/components/appraise/brn_appraise.dart';
-import 'package:bruno/src/components/appraise/brn_appraise_emoji_item.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise_emoji_item.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 表情评价列表

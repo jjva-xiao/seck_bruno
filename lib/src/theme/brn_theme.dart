@@ -1,5 +1,5 @@
 /// theme export
-library bruno_theme;
+library bruno_fork_theme;
 
 export 'base/brn_base_config.dart';
 export 'base/brn_default_config_utils.dart';

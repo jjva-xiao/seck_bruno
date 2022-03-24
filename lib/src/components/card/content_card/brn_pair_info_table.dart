@@ -1,11 +1,11 @@
 import 'dart:math';
 import 'dart:ui' as ui;
 
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme.dart';
-import 'package:bruno/src/utils/brn_rich_text.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
-import 'package:bruno/src/utils/css/brn_css_2_text.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/utils/brn_rich_text.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/utils/css/brn_css_2_text.dart';
 import 'package:flutter/material.dart';
 
 /// key-value 展示信息的集合,需要配合[BrnInfoModal]使用
@@ -233,7 +233,7 @@ class _BrnPairInfoTableState extends State<BrnPairInfoTable> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Expanded(child: valueWidget),
-          BrunoTools.getAssetImage(BrnAsset.ICON_RIGHT_ARROW),
+          bruno_forkTools.getAssetImage(BrnAsset.ICON_RIGHT_ARROW),
         ],
       );
     }
@@ -268,7 +268,7 @@ class _BrnPairInfoTableState extends State<BrnPairInfoTable> {
   }
 
   BrnInfoModal _foldButtonWidget() {
-    Image img = BrunoTools.getAssetImage('icons/icon_uparrow.png');
+    Image img = bruno_forkTools.getAssetImage('icons/icon_uparrow.png');
     Transform trsm = Transform.rotate(angle: pi, child: img);
     Row row = Row(
       children: <Widget>[
@@ -327,7 +327,7 @@ class _BrnPairInfoTableState extends State<BrnPairInfoTable> {
   }
 
   BrnInfoModal _expandedButtonWidget() {
-    Image img = BrunoTools.getAssetImage('icons/icon_uparrow.png');
+    Image img = bruno_forkTools.getAssetImage('icons/icon_uparrow.png');
     Row row = Row(
       children: <Widget>[
         Padding(
@@ -470,7 +470,7 @@ mixin PairInfoPart {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Expanded(child: valueWidget),
-          BrunoTools.getAssetImage(BrnAsset.ICON_RIGHT_ARROW),
+          bruno_forkTools.getAssetImage(BrnAsset.ICON_RIGHT_ARROW),
         ],
       );
     }
@@ -871,7 +871,7 @@ class BrnInfoModal {
                     keyCallback();
                   }
                 },
-                child: BrunoTools.getAssetImage(BrnAsset.ICON_QUESTION),
+                child: bruno_forkTools.getAssetImage(BrnAsset.ICON_QUESTION),
               ),
               Text(
                 '：',
@@ -904,7 +904,7 @@ class BrnInfoModal {
                   valueCallback();
                 }
               },
-              child: BrunoTools.getAssetImage(BrnAsset.ICON_QUESTION),
+              child: bruno_forkTools.getAssetImage(BrnAsset.ICON_QUESTION),
             )
           ],
         );
@@ -922,7 +922,7 @@ class BrnInfoModal {
               keyCallback();
             }
           },
-          child: BrunoTools.getAssetImage(BrnAsset.ICON_QUESTION),
+          child: bruno_forkTools.getAssetImage(BrnAsset.ICON_QUESTION),
         ));
         keyGen.addText('：',
             textStyle: themeData.keyTextStyle?.generateTextStyle());
@@ -939,7 +939,7 @@ class BrnInfoModal {
               valueCallback();
             }
           },
-          child: BrunoTools.getAssetImage(BrnAsset.ICON_QUESTION),
+          child: bruno_forkTools.getAssetImage(BrnAsset.ICON_QUESTION),
         ));
       }
       valueWidget = valueGen.build();

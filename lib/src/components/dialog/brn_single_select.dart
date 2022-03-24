@@ -1,9 +1,9 @@
-import 'package:bruno/src/components/dialog/brn_dialog_utils.dart';
-import 'package:bruno/src/components/line/brn_line.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_dialog_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/dialog/brn_dialog_utils.dart';
+import 'package:bruno_fork/src/components/line/brn_line.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_dialog_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 typedef BrnSingleSelectOnSubmitCallback = Function(String data);
@@ -231,7 +231,7 @@ class BrnSingleSelectDialogWidgetState extends State<BrnSingleSelectDialogWidget
                               },
                               child: Padding(
                                 padding: EdgeInsets.all(15),
-                                child: BrunoTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
+                                child: bruno_forkTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
                               )))
                       : Container()
                 ],
@@ -283,8 +283,8 @@ class BrnSingleSelectDialogWidgetState extends State<BrnSingleSelectDialogWidget
                     alignment: Alignment.center,
                     height: 44,
                     child: widget.checkedItem == widget.conditions[index]
-                        ? BrunoTools.getAssetImageWithBandColor(BrnAsset.iconSingleSelected)
-                        : BrunoTools.getAssetImage(BrnAsset.iconUnSelect),
+                        ? bruno_forkTools.getAssetImageWithBandColor(BrnAsset.iconSingleSelected)
+                        : bruno_forkTools.getAssetImage(BrnAsset.iconUnSelect),
                   ),
                   onTap: () {
                     if (widget.onItemClick != null) {

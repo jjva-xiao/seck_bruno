@@ -1,12 +1,12 @@
-import 'package:bruno/src/theme/brn_theme.dart';
-import 'package:bruno/src/theme/configs/brn_abnormal_state_config.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/theme/configs/brn_abnormal_state_config.dart';
 
 /// 描述: 全局配置
 ///
 /// 当用户使用时对单个组件自定义配置，优先走单个组件特定配置（作用范围档次使用）
 /// 当用户配置组件通用配置时如[BrnDialogConfig]优先使用该配置
 /// 若没有配置组件通用配置，走[BrnCommonConfig]全局配置
-/// 如果以上都没有配置走Bruno默认配置即[BrnDefaultConfigUtils]中配置
+/// 如果以上都没有配置走bruno_fork默认配置即[BrnDefaultConfigUtils]中配置
 /// 当没有配置组件的特定属性时使用上一级特定配置
 ///
 class BrnAllThemeConfig {

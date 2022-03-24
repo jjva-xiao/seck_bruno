@@ -1,6 +1,6 @@
-import 'package:bruno/src/components/picker/multi_range_picker/bean/brn_multi_column_picker_entity.dart';
-import 'package:bruno/src/components/picker/multi_range_picker/brn_multi_column_picker_util.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/picker/multi_range_picker/bean/brn_multi_column_picker_entity.dart';
+import 'package:bruno_fork/src/components/picker/multi_range_picker/brn_multi_column_picker_util.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 
 class BrnMultiRangeSelConverter {
   const BrnMultiRangeSelConverter();
@@ -69,13 +69,13 @@ class BrnMultiRangeSelConverter {
           if (includeUnlimitSelection) {
             return true;
           } else {
-            return !BrunoTools.isEmpty(f.value);
+            return !bruno_forkTools.isEmpty(f.value);
           }
         })
         ?.map((BrnPickerEntity f) => f)
         ?.toList();
     List<BrnPickerEntity> selectedParams = selectedEntity == null ? [] : selectedEntity;
-    if (!BrunoTools.isEmpty(selectedParams) && !BrunoTools.isEmpty(parentKey)) {
+    if (!bruno_forkTools.isEmpty(selectedParams) && !bruno_forkTools.isEmpty(parentKey)) {
       params[parentKey] = selectedParams;
     }
     return params;

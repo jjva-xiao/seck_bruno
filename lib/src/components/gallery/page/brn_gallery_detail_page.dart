@@ -1,14 +1,14 @@
 import 'dart:core';
 
-import 'package:bruno/src/components/gallery/config/brn_basic_gallery_config.dart';
-import 'package:bruno/src/components/gallery/config/brn_controller.dart';
-import 'package:bruno/src/components/gallery/page/brn_gallery_summary_page.dart';
-import 'package:bruno/src/components/navbar/brn_appbar.dart';
-import 'package:bruno/src/components/tabbar/normal/brn_tab_bar.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_appbar_config.dart';
-import 'package:bruno/src/theme/configs/brn_gallery_detail_config.dart';
-import 'package:bruno/src/theme/configs/brn_tabbar_config.dart';
+import 'package:bruno_fork/src/components/gallery/config/brn_basic_gallery_config.dart';
+import 'package:bruno_fork/src/components/gallery/config/brn_controller.dart';
+import 'package:bruno_fork/src/components/gallery/page/brn_gallery_summary_page.dart';
+import 'package:bruno_fork/src/components/navbar/brn_appbar.dart';
+import 'package:bruno_fork/src/components/tabbar/normal/brn_tab_bar.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_appbar_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_gallery_detail_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_tabbar_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/configs/brn_gallery_detail_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/configs/brn_gallery_detail_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// fold 收起状态
@@ -74,7 +74,7 @@ class _BrnPhotoBottomCardState extends State<BrnPhotoBottomCard> with TickerProv
                   ),
                   Transform.rotate(
                     angle: pi,
-                    child: BrunoTools.getAssetImageWithColor(
+                    child: bruno_forkTools.getAssetImageWithColor(
                         BrnAsset.ICON_UPARROW, widget.themeData.iconColor),
                   )
                 ],
@@ -108,7 +108,7 @@ class _BrnPhotoBottomCardState extends State<BrnPhotoBottomCard> with TickerProv
                           child:
                               Text('收起', style: widget.themeData.actionStyle?.generateTextStyle()),
                         ),
-                        BrunoTools.getAssetImageWithColor(
+                        bruno_forkTools.getAssetImageWithColor(
                             BrnAsset.ICON_UPARROW, widget.themeData.iconColor)
                       ],
                     ),

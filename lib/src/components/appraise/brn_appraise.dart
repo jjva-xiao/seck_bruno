@@ -1,10 +1,10 @@
-import 'package:bruno/src/components/appraise/brn_appraise_emoji_list_view.dart';
-import 'package:bruno/src/components/appraise/brn_appraise_header.dart';
-import 'package:bruno/src/components/appraise/brn_appraise_star_list_view.dart';
-import 'package:bruno/src/components/appraise/brn_mulit_select_tags.dart';
-import 'package:bruno/src/components/button/brn_big_main_button.dart';
-import 'package:bruno/src/components/input/brn_input_text.dart';
-import 'package:bruno/src/components/picker/brn_tags_picker_config.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise_emoji_list_view.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise_header.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise_star_list_view.dart';
+import 'package:bruno_fork/src/components/appraise/brn_mulit_select_tags.dart';
+import 'package:bruno_fork/src/components/button/brn_big_main_button.dart';
+import 'package:bruno_fork/src/components/input/brn_input_text.dart';
+import 'package:bruno_fork/src/components/picker/brn_tags_picker_config.dart';
 import 'package:flutter/material.dart';
 
 /// 点击表情或者星星时的回调

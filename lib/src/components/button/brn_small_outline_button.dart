@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:bruno/src/components/button/brn_normal_button.dart';
-import 'package:bruno/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/components/button/brn_normal_button.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
 import 'package:flutter/material.dart';
 
 /// 边框 小、次按钮，小灰框，默认按钮确认,支持自定义边框、文字颜色

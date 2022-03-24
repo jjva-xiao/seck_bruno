@@ -1,8 +1,8 @@
-import 'package:bruno/bruno.dart';
-import 'package:bruno/src/constants/brn_strings_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/theme/configs/brn_card_title_config.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/bruno_fork.dart';
+import 'package:bruno_fork/src/constants/brn_strings_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/configs/brn_card_title_config.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 右侧为箭头的卡片标题组件
@@ -138,7 +138,7 @@ class BrnActionCardTitle extends StatelessWidget {
   }
 
   Widget _arrowWidget() {
-    return BrunoTools.getAssetSizeImage(BrnAsset.ICON_RIGHT_ARROW, 16, 16);
+    return bruno_forkTools.getAssetSizeImage(BrnAsset.ICON_RIGHT_ARROW, 16, 16);
   }
 
   Widget _accessoryTextWidget(BrnCardTitleConfig defaultConfig) {

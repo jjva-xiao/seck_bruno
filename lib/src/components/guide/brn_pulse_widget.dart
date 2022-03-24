@@ -1,4 +1,4 @@
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
 import 'package:flutter/material.dart';
 
 /// 脉冲组件, 样式为循环扩大的小圆点

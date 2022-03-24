@@ -1,12 +1,12 @@
-import 'package:bruno/src/components/line/brn_line.dart';
-import 'package:bruno/src/components/picker/base/brn_picker_constants.dart';
-import 'package:bruno/src/components/picker/base/brn_picker_title.dart';
-import 'package:bruno/src/components/picker/base/brn_picker_title_config.dart';
-import 'package:bruno/src/components/picker/brn_picker_cliprrect.dart';
-import 'package:bruno/src/components/picker/multi_select_bottom_picker/brn_multi_select_data.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/line/brn_line.dart';
+import 'package:bruno_fork/src/components/picker/base/brn_picker_constants.dart';
+import 'package:bruno_fork/src/components/picker/base/brn_picker_title.dart';
+import 'package:bruno_fork/src/components/picker/base/brn_picker_title_config.dart';
+import 'package:bruno_fork/src/components/picker/brn_picker_cliprrect.dart';
+import 'package:bruno_fork/src/components/picker/multi_select_bottom_picker/brn_multi_select_data.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 点击确定时的回调
@@ -164,8 +164,8 @@ class MultiSelectDialogWidgetState extends State<BrnMultiSelectListPicker> {
                         alignment: Alignment.center,
                         height: 50,
                         child: widget.items[index].isChecked
-                            ? BrunoTools.getAssetImageWithBandColor(BrnAsset.iconMultiSelected)
-                            : BrunoTools.getAssetImage(BrnAsset.iconUnSelect)),
+                            ? bruno_forkTools.getAssetImageWithBandColor(BrnAsset.iconMultiSelected)
+                            : bruno_forkTools.getAssetImage(BrnAsset.iconUnSelect)),
                   ],
                 ),
               ),

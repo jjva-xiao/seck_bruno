@@ -1,6 +1,6 @@
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -201,10 +201,10 @@ class DeleteTagItemWidget extends StatelessWidget {
           RoundedRectangleBorder(borderRadius: BorderRadius.circular(themeData?.tagRadius)),
       //删除图标
       deleteIcon: deleteIconSize != null
-          ? BrunoTools.getAssetSizeImage(
+          ? bruno_forkTools.getAssetSizeImage(
               BrnAsset.ICON_CLOSE, deleteIconSize.width, deleteIconSize.height,
               color: deleteIconColor)
-          : BrunoTools.getAssetImageWithColor(BrnAsset.ICON_CLOSE, deleteIconColor),
+          : bruno_forkTools.getAssetImageWithColor(BrnAsset.ICON_CLOSE, deleteIconColor),
       onDeleted: () {
         debugPrint('$index');
         didDeleted(index);

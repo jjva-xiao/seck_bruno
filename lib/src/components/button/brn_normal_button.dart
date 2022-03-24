@@ -1,5 +1,5 @@
-import 'package:bruno/bruno.dart';
-import 'package:bruno/src/utils/brn_multi_click_util.dart';
+import 'package:bruno_fork/bruno_fork.dart';
+import 'package:bruno_fork/src/utils/brn_multi_click_util.dart';
 import 'package:flutter/material.dart';
 
 const double _BFontSize = 16;

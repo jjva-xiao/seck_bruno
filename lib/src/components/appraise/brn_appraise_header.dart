@@ -1,7 +1,7 @@
-import 'package:bruno/src/components/appraise/brn_appraise.dart';
-import 'package:bruno/src/constants/brn_asset_constants.dart';
-import 'package:bruno/src/theme/brn_theme_configurator.dart';
-import 'package:bruno/src/utils/brn_tools.dart';
+import 'package:bruno_fork/src/components/appraise/brn_appraise.dart';
+import 'package:bruno_fork/src/constants/brn_asset_constants.dart';
+import 'package:bruno_fork/src/theme/brn_theme_configurator.dart';
+import 'package:bruno_fork/src/utils/brn_tools.dart';
 import 'package:flutter/material.dart';
 
 /// 描述: 评价组件title
@@ -93,7 +93,7 @@ class BrnAppraiseHeader extends StatelessWidget {
                     }
                     Navigator.of(context).pop();
                   },
-                  child: BrunoTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
+                  child: bruno_forkTools.getAssetImage(BrnAsset.ICON_PICKER_CLOSE),
                 ),
               ],
             ),

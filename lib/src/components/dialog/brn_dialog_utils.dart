@@ -1,4 +1,4 @@
-import 'package:bruno/src/theme/configs/brn_dialog_config.dart';
+import 'package:bruno_fork/src/theme/configs/brn_dialog_config.dart';
 import 'package:flutter/material.dart';
 
 class BrnDialogUtils {
