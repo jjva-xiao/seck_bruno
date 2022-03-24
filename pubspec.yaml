@@ -1,7 +1,6 @@
 name: bruno_fork
 description: bruno框架的在Flutter 1.22.6的分支
-version: 1.0.0
-author: XiaoHongBing
+version: 2.0.0
 homepage: http://bruno.ke.com/
 
 environment:
@@ -11,12 +10,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  xml: 4.5.1
-  intl: 0.16.1
-  path_drawing: 0.4.1+1
-  photo_view: 0.10.3
-  lpinyin: 1.1.1
-  badges: 1.2.0
+  xml: ^4.5.1
+  intl: ^0.16.1
+  path_drawing: ^0.4.1+1
+  photo_view: ^0.10.3
+  lpinyin: ^1.1.1
+  badges: ^1.2.0
 
 dev_dependencies:
   flutter_test:
