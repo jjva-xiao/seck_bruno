@@ -9,13 +9,13 @@ import 'package:flutter/material.dart';
 typedef BrnAppraiseEmojiClickCallback = void Function(int index);
 
 class BrnAppraiseEmojiItem extends StatefulWidget {
-  /// 加载的gif图名称,传入asserts/image 全路径
+  /// 加载的gif图名称,传入asserts/images 全路径
   final String selectedName;
 
-  /// 未选中的图片,传入asserts/image 全路径
+  /// 未选中的图片,传入asserts/images 全路径
   final String unselectedName;
 
-  /// 默认图片,传入asserts/image 全路径
+  /// 默认图片,传入asserts/images 全路径
   final String defaultName;
 
   /// 表情所在的index

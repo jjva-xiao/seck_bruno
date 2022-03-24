@@ -85,7 +85,7 @@ class BrnSelectedListActionSheet<T> {
   /// 每一行删除按钮是否展示。默认为 false。如果不显示，自定义每一行 widget 时内容可以填充整行
   final bool isDeleteButtonHidden;
 
-  /// 每一行前边的 icon，可不传。如果该 image 没有设置，并且 itemTitleBuilder 返回的是自定义 widget，则该 widget 自动填充整行区域
+  /// 每一行前边的 icon，可不传。如果该 images 没有设置，并且 itemTitleBuilder 返回的是自定义 widget，则该 widget 自动填充整行区域
   final Image itemIconImage;
 
   /// 点击清空按钮后的回调，如果没有实现该回调，则会显示默认弹窗。如果要关闭已选列表，请调用 dismiss()。

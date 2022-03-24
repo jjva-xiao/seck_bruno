@@ -142,7 +142,7 @@ class BrnTriangleIndicator extends Decoration {
     properties.defaultDiagnosticsTreeStyle = DiagnosticsTreeStyle.whitespace;
     properties.add(DiagnosticsProperty<Color>('color', color, defaultValue: null));
     properties.add(DiagnosticsProperty<Gradient>('gradient', gradient, defaultValue: null));
-    properties.add(DiagnosticsProperty<DecorationImage>('image', image, defaultValue: null));
+    properties.add(DiagnosticsProperty<DecorationImage>('images', image, defaultValue: null));
     properties.add(IterableProperty<BoxShadow>('shadows', shadows,
         defaultValue: null, style: DiagnosticsTreeStyle.whitespace));
     properties.add(DiagnosticsProperty<ShapeBorder>('shape', shape));
